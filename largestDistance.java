@@ -69,7 +69,8 @@ int largestDistance(int[] a) {
     for (int i = 0; i < a.length/2; i++)
         points[i] = new Point(a[2*i],a[2*i+1]);
       
-    // Iterate through all of the points in the array
+    // Iterate through all of the points in the array except
+    // the last one
     for (int j = 0; j < points.length - 1; j++)
     {
         // Iterate through all the points that come after it
